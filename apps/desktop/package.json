@@ -1,0 +1,36 @@
+{
+  "name": "wow-super-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "哇塞-超级桌面：本地优先的文件、知识库与 AI 无限画布",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run && node --test electron/*.test.cjs",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@xyflow/react": "12.8.5",
+    "lucide-react": "0.468.0",
+    "mammoth": "1.9.0",
+    "openai": "6.15.0",
+    "pdfjs-dist": "4.10.38",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zustand": "5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "4.3.4",
+    "concurrently": "9.1.2",
+    "electron": "43.0.0",
+    "typescript": "5.7.3",
+    "vite": "6.1.0",
+    "vitest": "2.1.8",
+    "wait-on": "8.0.2"
+  }
+}

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Builds and caches
+dist/
+out/
+.next/
+.vinext/
+.vite/
+.wrangler/
+coverage/
+*.tsbuildinfo
+
+# Local application data
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+
+# Logs and OS files
+*.log
+.DS_Store
+
+# Editor files
+.idea/
+.vscode/
+
